@@ -66,7 +66,7 @@ public class OAuthManagerStore {
       if (providerName.equals("") || providerName == null) {
         throw new IllegalArgumentException("Provider is null");
       }
-      editor.putString(providerName, new Gson().toJson(accessToken));
+      // editor.putString(providerName, new Gson().toJson(accessToken));
     }
 
     public void store(String providerName, final OAuth2AccessToken accessToken) {
@@ -76,7 +76,7 @@ public class OAuthManagerStore {
       if (providerName.equals("") || providerName == null) {
         throw new IllegalArgumentException("Provider is null");
       }
-      editor.putString(providerName, new Gson().toJson(accessToken));
+      // editor.putString(providerName, new Gson().toJson(accessToken));
     }
     
 
